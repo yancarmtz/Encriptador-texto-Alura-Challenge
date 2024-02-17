@@ -1,0 +1,180 @@
+/*La propiedad font-weight en CSS se utiliza para especificar el grosor o la "pesadez" de la fuente de texto. Controla la negrita o la delgadez del texto. Esta propiedad acepta varios valores, desde números numéricos, palabras clave predefinidas hasta palabras clave relativas.  */
+
+
+body {
+    background-color: rgb(247, 240, 240);
+}
+
+td {
+    vertical-align: middle;
+}
+
+.logo_alura {
+    width: 60px;
+    margin: 20px 50px;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 5px 5px 30px #000000;
+    margin-bottom: 20px;
+}
+
+.principal {
+    width: 940px;
+}
+
+
+.input_texto {
+    width: 648px;
+    height: 500px;
+    position: absolute;
+    top: 94px;
+    left: 265px;
+    background-color: beige;
+    border: 3px solid black;
+    text-align:center;   
+    font-family: sans-serif; 
+    font-size: 20px;    
+    font-weight: 500;
+    border-radius: 15px; /* CURVEA LAS ESQUINAS DEL RECUADRO DE ENTRADA DE TEXTO */
+    box-shadow: 15px 15px 10px #000000; /*SOBRA NEGRA DE EL LADO DERECHO Y ABAJO */
+}
+
+.texto_alerta {
+    position: absolute;
+    top: 622px;
+    left: 444px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(146, 145, 145);
+    font-family: sans-serif;
+}
+
+
+.botones_encr_descrip {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 40.875rem;
+    left: 14.5rem;
+}
+
+
+.btn_encriptar {
+    background-color:  #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 18px;
+    width: 15%;
+    height: 3.5rem;
+    color: white;
+    font-size: 22px;
+    margin: 0 49px;
+    top: 40.875rem;
+    left: 14.5rem;
+    cursor:pointer;
+}
+
+.btn_desencriptar {
+    background-color:  #e4e4e4;
+    border: 1px solid #c0c0c0;
+    border-radius: 18px;
+    width: 15%;
+    height: 3.5rem;
+    color: rgb(107, 105, 105);
+    font-size: 22px;
+    top: 40.875rem;
+    left: 14.5rem;
+    cursor:pointer;
+}
+
+.contenedor_salida_datos {
+    display: grid;
+    background-color: white;
+    background-position: 15px 100px;
+    width: 26%;
+    height: 40em;
+    border-radius: 32px;
+    margin-left: 1180px;
+    position: absolute;
+    margin-top: -72px;
+
+}
+
+.imagen_fondo {
+    margin-top: 95px ;
+    margin-left: 80px;
+}
+
+
+.titulo3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 0 9px;
+    margin-top: 39px;
+    margin-bottom: 16px;
+}
+
+
+.solicitud_texto {
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 0 11px;
+
+}
+
+.text_output {
+    width: 460px;
+    height: 531px;
+    position: absolute;
+    text-align:center;   
+    font-family: sans-serif; 
+    font-size: 20px;    
+    font-weight: 500; 
+    border: 1px solid #e4e4e400;
+    margin: 26px;
+}
+
+.btn_copiar {
+    background-color:  #e4e4e4;
+    border: 1px solid #c0c0c0;
+    border-radius: 18px;
+    width: 57%;
+    height: 3.5rem;
+    color: rgb(107, 105, 105);
+    font-size: 22px;
+    margin: 570px 109px;
+    cursor:pointer;
+}
+
+
+.imagenes-social {
+    padding: 17px 224px;
+}
+
+.imagen_linkedln {
+    width: 67px;
+    position: absolute; 
+    margin: 0 0;
+    top: 764px;
+    left: 855px;
+
+
+}
+
+.imagen_github {
+    width: 113px;
+    position: absolute;
+    margin: 0 0;
+    top: 764px;
+    left: 961px;
+}
+
+.titulo-final {
+    text-align: center;
+    padding-top: 695px;
+    padding-left: 10px;
+}
