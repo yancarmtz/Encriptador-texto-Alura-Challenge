@@ -1,11 +1,16 @@
 /*para ocultar el boton copiar que se codifico en index.html, entre parentesis se agrega el ID de HTML */
-var boton = document.getElementById('boton-copiar');
+var boton = document.getElementById('botoncopiar');
 boton.hidden = true;  
 /************************************************************ */ 
 
 /*para ocultar input de salida que se codifico en index.html, entre parentesis se agrega el ID de HTML */
 var mensajesal = document.getElementById('mensaje-salida');
 mensajesal.hidden = true;  
+/************************************************************ */ 
+
+/*para ocultar imagenes de linkedin, github y un parrafo de salida que se codifico en index.html, entre parentesis se agrega el ID de HTML */
+var footer = document.getElementById('imagenSoc');
+footer.hidden = true;  
 /************************************************************ */ 
 
 function validarTexto (texto) {
@@ -19,17 +24,17 @@ function validarTexto (texto) {
         return true; 
     }else 
         if(texto==vacio) {
-           alert("Ingrese un mensaje para Encriptar");
+           alert("Ingrese un mensaje para Encriptar o Desencriptar");
            return true;
    }    else {
 
-        /*para desocultar input de salida que se codifico en index.html, entre parentesis se agrega el ID de HTML */
+        /*para desocultar input de salida imagen y texto que se codifico en index.html, entre parentesis se agrega el ID de HTML */
         var titulosfijos = document.getElementById('titulos-fijos');
         titulosfijos.hidden = true;              
         /************************************************************ */ 
 
         /*para desocultar el boton copiar que se codifico en index.html, entre parentesis se agrega el ID de HTML */
-        var boton = document.getElementById('boton-copiar');
+        var boton = document.getElementById('botoncopiar');
         boton.hidden = false; 
         /***************************************************************/
 
@@ -37,6 +42,12 @@ function validarTexto (texto) {
         var mensajesal = document.getElementById('mensaje-salida');
         mensajesal.hidden = false;              
         /************************************************************ */ 
+
+        /*para ocultar imagenes de linkedin, github y un parrafo de salida que se codifico en index.html, entre parentesis se agrega el ID de HTML */
+        var footer = document.getElementById('imagenSoc');
+        footer.hidden = false;  
+        /************************************************************ */ 
+
         return false;
     }
 }
@@ -50,7 +61,7 @@ function encriptartext() {
     if (validarTexto (textoIngresado) == false) {       
         let Encriptado = encriptar(textoIngresado);
         let resultado = document.querySelector("#mensaje-salida");
-        resultado.value = Encriptado;       
+        resultado.value = Encriptado;   
     }
                
 }

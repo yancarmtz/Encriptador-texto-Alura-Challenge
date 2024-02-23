@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Encriptador de texto</title>
-    <link rel="icon" href="/imagenes/alura.png">
+    <link rel="icon" href="imagenes/alura.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css"> 
 </head>
@@ -13,13 +13,13 @@
 <body>
     <header>
           <table>
-               <td><img src="/imagenes/alura.svg" alt="Logo Alura" class="logo_alura"></td>
+               <td><img src="imagenes/alura.svg" alt="Logo Alura" class="logo_alura"></td>
                <td><h1>Encriptador de Texto</h1></td>
           </table>    
     </header>    
 
     <main>
-        <section class="principal">
+        <div class="principal">
                
                <div class="texto_entrada">
                    <textarea class="input_texto" id="input-texto-ent" placeholder="Ingrese el texto aqui..."></textarea> 
@@ -36,26 +36,29 @@
                     <button onclick="desencriptartext();" class="btn_desencriptar" id="boton-desencriptar" >Desencriptar</button>
                </div>   
                 
+               
                <div class="contenedor_salida_datos" id="contenedordatossalida">
-                    <textarea class="text_output" type="text" id="mensaje-salida"></textarea>
-
-                    <div class="titulosfijos" id="titulos-fijos">
-                        <img src="/imagenes/Muñeco.png" class="imagen_fondo">
-                            <h3 class="titulo3" id="titulo-principal">Ningún mensaje fue encontrado</h3>
-                            <p class="solicitud_texto" id="solicitud_texto2">Ingrese primero el texto que desees encriptar o desencriptar.</p>
-                    </div>
-
-                    <button onclick="copiar();" class="btn_copiar" id="boton-copiar">Copiar</button>
-               </div>
-
-          </section>    
+                        
+                       <textarea class="text_output" type="text" id="mensaje-salida"></textarea>
+                
+                       <div class="titulosfijos" id="titulos-fijos">
+                           <img src="imagenes/Muñeco.png" class="imagen_fondo">
+                           <h3 class="titulo3" id="titulo-principal">Ningún mensaje fue encontrado</h3>
+                           <p class="solicitud_texto" id="solicitud_texto2">Ingrese primero el texto que desees encriptar o desencriptar.</p>
+                       </div>
+                   
+                       <div class="boton_copiar" id="botoncopiar">
+                           <button onclick="copiar();" class="btn_copiar" id="boton-copiar">Copiar</button>
+                       </div>
+                </div>  
+        </div>    
             
     </main>
 
     <footer>
-        <div class="imagenes-social">
+        <div class="imagenes-social" id="imagenSoc">
             <a href="https://www.linkedin.com/in/carlos-ya%C3%B1ez-mtz/" target="_blank">
-               <img class="imagen_linkedln" src="/imagenes/logo-linkedin.png" >
+               <img class="imagen_linkedln" src="imagenes/logo-linkedin.png" >
             </a>
 
             <a href="https://github.com/yancarmtz" target="_blank">
