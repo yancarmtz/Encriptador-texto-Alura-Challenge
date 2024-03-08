@@ -31,11 +31,15 @@ h1 {
     top: 94px;
     left: 265.008px;
     background-color: rgb(247, 240, 240);
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: none;
     text-align:center;   
     font-family: sans-serif; 
     font-size: 1.25rem;    
     font-weight: 500;
+}
+
+.input_texto:focus { /*Para que no se marque el margen negro de la caja de texto al darle click */
+    outline: none;
 }
 
 .texto_alerta {
@@ -54,6 +58,7 @@ h1 {
     position: absolute;
     top: 654px;
     left: 232px;
+    display:flex
 }
 
 
@@ -84,6 +89,7 @@ h1 {
     cursor:pointer;
 }
 
+
 .contenedor_salida_datos {
     display: grid;
     background-color: white;
@@ -95,6 +101,12 @@ h1 {
     margin-top: -72px;
 
 }
+
+
+.text_output:focus { /*Para que no se marque el margen negro de la caja de texto al darle click */
+    outline: none;
+}
+
 
 .imagen_fondo {
     margin-top: 95.008px;
@@ -407,6 +419,7 @@ footer {
          top: 121px;
          left: -8px;
          position: relative;
+         display: flex;
      }
 
   
